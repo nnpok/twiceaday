@@ -5,9 +5,7 @@ import Login from './components/Login'
 export default class App extends React.Component {
   render() {
     return (
-      <View style={style.container}>
-        <Text>Hello IJAAZ</Text>
-      </View>
+      <Login />
     );
   }
 }
