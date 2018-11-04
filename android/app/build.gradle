@@ -99,7 +99,7 @@ android {
 
     defaultConfig {
         applicationId "com.hello"
-        minSdkVersion rootProject.ext.minSdkVersion
+        minSdkVersion 18
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
@@ -137,6 +137,7 @@ android {
 }
 
 dependencies {
+    compile project(':react-native-ble-plx')
     implementation fileTree(dir: "libs", include: ["*.jar"])
     implementation "com.android.support:appcompat-v7:${rootProject.ext.supportLibVersion}"
     implementation "com.facebook.react:react-native:+"  // From node_modules
